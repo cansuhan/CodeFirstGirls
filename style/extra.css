@@ -123,3 +123,11 @@ input[type=text], select, textarea {
     text-align: center;
     align-items: center;
 }
+
+@media screen and (max-width: 300px) {
+    .container, .box, .imgBox, .details, .content {
+     max-width: 100%; 
+     height: auto;
+     /* The width is 100% when the viewport is 600px or smaller */
+    }
+}
