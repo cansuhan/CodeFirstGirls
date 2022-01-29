@@ -441,7 +441,7 @@ footer {
 
 
 /* main*/
-h1#title, p {
+h1#title {
   text-align: center;
   margin-bottom: 15px;
 }
