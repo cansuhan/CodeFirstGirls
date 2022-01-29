@@ -476,6 +476,11 @@ ol.removeDecoration li{
   margin: 50px 0;
 }
 
+<!--DISTANCE BEWTWEEN EACH PARAGRAPH-->
+ol.removeDecoration li {
+ margin-bottom: 10px; 
+}
+
 .underline{
   text-decoration: dotted underline;
 }
