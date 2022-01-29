@@ -1,0 +1,369 @@
+ /* font from fonts.google.com*/
+ @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:wght@300&family=Neonderthaw&family=Poppins:ital,wght@0,100;0,200;1,500;1,600&family=Raleway:ital,wght@0,400;1,300;1,400;1,600&display=swap');
+ 
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../media/Home/background.jpg);
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.644);
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+p {
+  color: #dadada;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px rgba(11, 11, 11, 0.11), 
+               1px 1px 3px rgba(99, 61, 61, 0.444); 
+}
+
+h1 {
+  padding: 5px;
+  margin: 5px;
+  color: #dadada;
+  font-family:'Fredericka the Great', cursive;
+  font-size: 24px;
+  font-style: bold;
+  text-shadow: 1px 1px 1px rgba(11, 11, 11, 0.444), 
+             1px 1px 3px rgba(0, 0, 0, 0.444); 
+}
+
+h2 {
+  margin: 5px;
+  padding: 5px;
+  color: #dadada;
+  align-items: center;
+  font-family:'Fredericka the Great', cursive;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 3px;
+  padding: 3px;
+  color: #dadada;
+  font-family:'Fredericka the Great', cursive;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555), 
+             1px 1px 3px rgba(175, 201, 206, 0.77); 
+}
+
+h5 {
+  font-size: 18px;
+  color: #dadada;
+}
+
+.centreText {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.centreHeadings {
+  padding: 5px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+/* Black background */
+.backToBlack {
+  background-color: #00000093;
+  display: block;
+  justify-content: center;
+  padding: 20px;
+  font-style: normal;
+  color: #dadada;
+}
+
+/* White background */
+.backToWhite {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.555);
+  display: flex;
+  justify-content: center;
+}
+
+ /* Add a black background color to the top navigation */
+ .topNav {
+    background-color: #00000093;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topNav a {
+    float: right;
+    align-items: center;
+    color: #dadada;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Fredericka the Great', cursive;
+    font-size: 18px;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topNav .icon {
+    display: none;
+  }
+
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #dadada;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:'Fredericka the Great', cursive;
+    margin: 0;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000d7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #dadada;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+    
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topNav a:hover, .dropdown:hover .dropbtn {
+    background-color: #b1dbd1;
+    color: rgba(22, 11, 11, 0.777);;
+  }
+  
+  /* Add a  background volour to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #b1dbd1;
+    color: rgba(22, 11, 11, 0.777); 
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #b1dbd1;
+    color: black !important;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topNav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topNav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topNav.responsive {position: relative;}
+    .topNav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topNav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topNav.responsive .dropdown {float: none;}
+    .topNav.responsive .dropdown-content {position: relative;}
+    .topNav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  } 
+  
+  * {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+.img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow {
+  max-width: 60%;
+  position: relative;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000d7;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #b1dbd1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #dadada;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}
+}
+
+/* overlay effect on images on the slider */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000d7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.mySlides:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* change the colour of hyperlinks */
+.link{
+  color: #dadada;
+}
+
+.link:hover:hover {
+  color: turquoise;
+}
+
+/* Displaying images on artist pages in table format with description below the images  */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.desc {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  color: #dadada;
+}
+
+/* Styling footer for all pages  */
+footer {
+  background-color: rgba(0, 0, 0, 0.678);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  font-style: bold;
+  text-shadow:rgb(255, 255, 255)
+}

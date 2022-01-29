@@ -1,0 +1,188 @@
+<!-- Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>Women Artists</title>
+</head>
+
+<body>
+    <!-- Nagivation bar with dropdown menu -->
+    <div class="topNav" id="myTopnav">
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/exhibitions.html">What's On</a>
+        <div class="dropdown">
+            <button class="dropbtn">Artists<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="./pages/frida.html">Frida Kahlo</a>
+                <a href="./pages/lois.html">Loïs Mailou Jones</a>
+                <a href="./pages/leonora.html">Leonora Carrington</a>
+                <a href="./pages/tamara.html">Tamara de Lempicka</a>
+                <a href="./pages/aretha.html">Aretha Franklin</a>
+                <a href="./pages/billie.html">Billie Holiday</a>
+            </div>
+        </div>
+        <a href="index.html" class="active">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <h3> Women Artists </h3>
+    </div>
+
+    <!-- Sliding images  -->
+    <div class="slideshow">
+
+        <div class="mySlides fade">
+            <img src="./media/Home/JonesHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/lois.html">Loïs Mailo Jones</a></h5>
+                    Loïs Mailou Jones was an influential artist and teacher during her seven-decade career. Jones was
+                    one of
+                    the most notable figures to attain fame for her art while living as a black expatriate in Paris
+                    during
+                    the 1930s and 1940s.
+                    <br>
+                    <br>
+                    Click on the link above to see some of their art.
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./media/Home/CarringtonHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/leonora.html">Leonora Carrington</a></h5>
+                    Mary Leonora Carrington OBE was a British-born Mexican artist, surrealist painter, and novelist. She
+                    lived
+                    most of her adult life in Mexico City and was one of the last surviving participants in the
+                    surrealist
+                    movement of the 1930s.
+                    <br>
+                    <br>
+                    Click on the link above to see some of their art.
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Home/TamaradeLempickaHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/tamara.html">Tamara de Lempicka</a></h5>
+                    Tamara de Lempicka was a Polish painter who spent her working life in France and the United States.
+                    She is best known for her polished Art Deco portraits of aristocrats and the wealthy, and for her
+                    highly stylized paintings of nudes.
+                    <br>
+                    <br>
+                    Click on the link above to see some of their art.
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Home/FridaHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/frida.html">Frida Kahlo</a></h5>
+                    One of the most influencial artists of the century, Magdalena Carmen Frida Kahlo y Calderón was a
+                    Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and
+                    artifacts of Mexico.
+                    <br>
+                    <br>
+                    Click on the link above to see some of their art.
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Home/ArethaFranklinHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/aretha.html">Aretha Franklin</a></h5>
+                    Aretha Louise Franklin was an American singer, songwriter and pianist. Referred to as the "Queen of
+                    Soul", she has twice been placed ninth in Rolling Stone's "100 Greatest Artists of All Time".
+                    <br>
+                    <br>
+                    Click on the link above to see some of their creations.
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./media/Home/BillieHolidayHome.jpg" class="img" style="width:100%">
+            <div class="overlay">
+                <div class="text">
+                    <h5><a class="link" href="./pages/billie.html">Billie Holiday</a></h5>
+                    Billie Holiday was an American jazz and swing music singer. Holiday had an innovative influence on
+                    jazz music and pop singing. Her
+                    vocal style, strongly inspired by jazz instrumentalists, pioneered a new way of manipulating
+                    phrasing and tempo.
+                    <br>
+                    <br>
+                    Click on the link above to see some of their creations.
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <br>
+    <!-- javascript -->
+    <script src="./JS/home.js"></script>
+
+    <div class="centreText backToBlack">
+        <h2>Why Women Artists?</h2>
+        <p>
+            In an era when painting, portraiture and the female artist are still regularly dismissed or marginalised,
+            only
+            one in four of this year's Turner prize nominees are women and none of them work in portraiture or painting,
+            while only 5% of commercial London galleries show an equal number of male and female artists.
+            <br>
+            <br>
+            The truth is that women have never been treated equally in the art world, and today they remain dramatically
+            underrepresented and undervalued in museums, galleries, and auction houses. Counting and quantifying would
+            not solve
+            discrimination, but statistics are useful for understanding the scope of the problem. As NMWA Director Susan
+            Fisher Sterling says, “People in the art world want to think we are achieving parity more quickly than we
+            are.”
+            With this website we are hoping to amplify and cherish the works of some of the greatest female artists.
+            <br>
+            <br>
+            Find more information on our <a class="link" href="./pages/about.html"> About</a> page.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div>
+        <footer class="backToWhite">
+            <div>
+                <a target="_blank" href="https://www.instagram.com/womenartist2022/">
+                    <img src="./media/Home/insta.png" alt="Instagram Logo" width="50" height="50">
+                </a>
+                <br>
+                Find us on Social Media
+                <br>
+                Thank you for visiting our website
+                <br>
+                Code First Girls
+                Project by Cansu & Hellen - January 2022
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
