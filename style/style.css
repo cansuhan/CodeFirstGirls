@@ -338,6 +338,12 @@ h5 {
   color: turquoise;
 }
 
+@media screen and (max-width: 300px) {
+  .mySlides, .overlay, .text, .link {
+    font-size: 10px;
+  }
+}
+
 /* Displaying images on artist pages in table format with description below the images  */
 .row {
   display: flex;
