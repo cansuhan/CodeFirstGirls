@@ -1,14 +1,14 @@
 
 
 //Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon 
-function myFunction() {
+/*function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topNav") {
     x.className += "responsive";
   } else {
     x.className = "topNav";
   }
-}
+}*/
 
 
 // Images on a slideshow with responsive buttons 
