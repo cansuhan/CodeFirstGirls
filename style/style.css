@@ -373,3 +373,68 @@ footer {
   font-style: bold;
   text-shadow:rgb(255, 255, 255)
 }
+
+
+
+/*HELLEN Style the menu for smaller screen */
+.dropbtn-reduceNavBar {
+  background-color: lightslategray;
+  color: black;
+  padding: 12px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.dropdown-reduceNavBar {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-reduceNavBar {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: lightgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-reduceNavBar a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  display: block;
+}
+.dropdown-reduceNavBar {
+  font-size: 13px;
+  font-family:'Fredericka the Great', cursive;
+}
+
+.dropdown-content-reduceNavBar a:hover {background-color: #f1f1f1;}
+.dropdown-reduceNavBar:hover .dropdown-content-reduceNavBar {display: block;}
+.dropdown-reduceNavBar:hover .dropbtn-reduceNavBar {background-color: darkgray;}
+
+
+/*Responsive navbar*/
+
+@media only screen and (min-width: 601px) {
+  .dropdown-reduceNavBar {
+    display: none;
+  }
+
+}
+
+
+.dropdown-reduceNavBar {
+  margin-top: -62px;
+  margin-right: 90px;
+  border-radius: 20px;
+}
+
+
+
+
