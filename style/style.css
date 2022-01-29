@@ -430,11 +430,81 @@ footer {
 
 
 .dropdown-reduceNavBar {
-  margin-top: -45px;
+  margin-top: -50px;
   margin-right: 90px;
   border-radius: 20px;
 }
 
 
+
+/*Franklin CSS- Hellen ADD*/
+
+
+/* main*/
+h1#title, p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+#img-div img{
+  display:block;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto; /* margine 0 auto center items horizontally - it need width specified- display to specify hoe to display an element*/
+  border-radius: 5px;
+}
+
+
+#img-caption{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#tribute-info ol{
+  list-style: none;
+  text-align: justify;
+  width: 1000px;
+  line-height: 20px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+ol.removeDecoration li{
+  margin: 50px 0;
+}
+
+.underline{
+  text-decoration: dotted underline;
+}
+
+.civil-right{
+  text-decoration:underline;
+}
+
+#tribute-info{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+  /*screen adjust*/
+  @media screen and (max-width: 992px) {
+  
+  #tribute-info ol{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+#tribute-info ol{
+  width: 250px;
+}
+}
 
 
