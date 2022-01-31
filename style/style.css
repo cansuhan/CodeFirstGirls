@@ -340,8 +340,8 @@ h5 {
   color: turquoise;
 }
 
-@media screen and (max-width: 300px) {
-  .mySlides, .overlay, .text, .link {
+@media screen and (max-width: 600px) {
+  .text {
     font-size: 10px;
   }
 }
