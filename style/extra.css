@@ -1,5 +1,5 @@
 
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", select elements and text areas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 10px; /* Some padding */ 
@@ -45,11 +45,12 @@ input[type=text], select, textarea {
     border-radius: 5%;
 }
 
+
 /* Container for exhibitions  */
 .container {
-    width: 960px;
+    max-width: 960px;
     min-height: 50px;
-    background: rgba(7, 7, 7, 0.288);
+    background: #00000093;
     margin: 30px auto 0;
     display: flex;
     flex-direction: row;
