@@ -209,8 +209,10 @@ h5 {
 }
 
 .mySlides {
-    display: none
+    display: none;
+    position: relative;
 }
+
 
 .img {
     vertical-align: middle;
