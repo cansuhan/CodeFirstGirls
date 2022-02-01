@@ -366,6 +366,26 @@ h5 {
   color: #dadada;
 }
 
+/* Displaying videos in a column style  */
+#videos {
+  padding: auto;
+  margin: auto;
+}
+
+#videos div.video {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px 10px 0;
+}
+
+#videos div.video video {
+  width: 100%;
+  height: 100%;
+}
+
 /* Styling footer for all pages  */
 footer {
   background-color: rgba(0, 0, 0, 0.678);
@@ -375,7 +395,6 @@ footer {
   font-style: bold;
   text-shadow:rgb(255, 255, 255)
 }
-
 
 
 /*HELLEN Style the menu for smaller screen */
