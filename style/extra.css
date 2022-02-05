@@ -80,7 +80,7 @@ input[type=text], select, textarea {
 
 /* scale image up on hover  */
 .container .box:hover .imgBox img {
-    transform: scale(0.95);
+    transform: scale(1.03);
 }
 
 .container .box .details {
